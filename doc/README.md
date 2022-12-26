@@ -1,2 +1,0 @@
-# Quiter
-the web application

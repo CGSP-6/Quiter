@@ -1,5 +1,7 @@
 # Quiter
 the web application
+## Restrictions
+we need use pure website
 ## For developers:
 - index.html is the main html
 - folders

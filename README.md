@@ -3,6 +3,11 @@ the web application
 ## Restrictions
 we need use pure website
 ## For developers:
+### work flow
+1. coding
+2. open xrdp.geos.ed.ac.uk
+3. git pull to refersh the website
+### structure
 - index.html is the main html
 - folders
   - res: this folder store images(e.g.icon) and the recording file for test

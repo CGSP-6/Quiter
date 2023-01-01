@@ -1,2 +1,2 @@
-# Quiter
+# Quiter - database
 the web application

@@ -1,4 +1,4 @@
-/* || 一般设置 */
+/* || general setting */
 
 html, body {
   margin: 0;
@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-/* || 排版 */
+/* || layout */
 
 h1, h2, h3 {
   font-family: 'Long Cang', cursive;
@@ -48,7 +48,7 @@ p, li {
   line-height: 1.5;
 }
 
-/* || 标题布局 */
+/* || title layout */
 
 header {
   margin-bottom: 10px;
@@ -101,7 +101,7 @@ nav a, nav span {
   color: black;
 }
 
-/* || 主体布局 */
+/* || main body layout */
 
 main {
   display: flex;

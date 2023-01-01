@@ -21,6 +21,8 @@ technologies used.**
 - You must use a database management system (**Oracle**) to store some of the attribute data
 involved. You can store x and y coordinates as number fields, but you should NOT try to
 store any more complex spatial data in Oracle(that is too much at this stage, and will feature in the Advanced Spatial Database Management course in Semester Two).
+### Records of tools
+1. [fontawesome](https://fontawesome.com/kits/d9dae18b78/use?welcome=yes)
 ## Interactions
 This is how these technologies work with each other.
 ![the png](./res/img/2023-01-01.png)

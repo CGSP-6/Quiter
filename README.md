@@ -1,5 +1,5 @@
 # Quiter
-the web application
+the web application of noise
 ## Guide
 
 - the project link: https://github.com/CGSP-6/Quiter 

@@ -1,5 +1,9 @@
 # Quiter
 the web application
+
+the project link: https://github.com/CGSP-6/Quiter 
+
+the web site link: https://www.geos.ed.ac.uk/~s2288848/cgsp/Quiter/ 
 ## Restrictions
 ![the png](./res/img/Website.png)
 we need use pure website development methods.

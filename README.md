@@ -1,9 +1,10 @@
 # Quiter
 the web application
+## Guide
 
-the project link: https://github.com/CGSP-6/Quiter 
+- the project link: https://github.com/CGSP-6/Quiter 
 
-the web site link: https://www.geos.ed.ac.uk/~s2288848/cgsp/Quiter/ 
+- the web site link: https://www.geos.ed.ac.uk/~s2288848/cgsp/Quiter/ 
 ## Restrictions
 ![the png](./res/img/Website.png)
 we need use pure website development methods.
@@ -23,7 +24,7 @@ store any more complex spatial data in Oracle(that is too much at this stage, an
 1. coding
 2. open xrdp.geos.ed.ac.uk
 3. git pull to refersh the website
-### structure
+## Structure
 - index.html is the main html
 - folders
   - res: this folder store images(e.g.icon) and the recording file for test
@@ -34,6 +35,6 @@ store any more complex spatial data in Oracle(that is too much at this stage, an
     - the doc file is on for the document. you can edit the doc/docs/readme.md file and others.
   - database(just store some information about the database, we need a real database for it)
 
-  # Reference
+  # Reference (click them!)
   1. [the school guide.](https://www.geos.ed.ac.uk/~bmg/teaching/rppp/week3/Capital%20Greenspaces%20Project.pdf)
   2. 

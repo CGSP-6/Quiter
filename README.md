@@ -46,6 +46,8 @@ look this
     - see more details on the doc/readme.md file
     - the doc file is on for the document. you can edit the doc/docs/readme.md file and others.
   - database(just store some information about the database, we need a real database for it)
+### More detailed 
+https://uoe-my.sharepoint.com/:u:/g/personal/s2288848_ed_ac_uk/EU57hQVl5YZJkF4_O_10hhYBZ-aA8sCTyci47-eq_cBTtg?e=XB3970 
 ## Preview
 ![the png](./res/img/2023-01-01-mobile.png)
 TODO get a desktop version png here.

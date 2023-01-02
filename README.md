@@ -28,6 +28,8 @@ This is how these technologies work with each other.
 ![the png](./res/img/2023-01-01.png)
 
 ## For developers:
+### Learning Materials
+look this
 ### work flow
 1. coding
 2. open xrdp.geos.ed.ac.uk

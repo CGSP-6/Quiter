@@ -6,6 +6,7 @@ html, body {
 }
 
 html {
+  /* base font-size of the website */
   font-size: 10px;
   background-color: #a9a9a9;
 }
@@ -16,7 +17,7 @@ body {
   margin: 0 auto;
 }
 
-/* || layout */
+/* || layout 字体*/
 
 h1, h2, h3 {
   font-family: 'Long Cang', cursive;
@@ -27,7 +28,7 @@ p, input, li {
   font-family: 'Noto Sans SC', sans-serif;
   color: #2a2a2a;
 }
-
+/* The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents. */
 h1 {
   font-size: 4rem;
   text-align: center;

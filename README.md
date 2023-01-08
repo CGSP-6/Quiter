@@ -3,6 +3,9 @@ the web application of noise
 ## Daily Check (MUST)
 ### 1. [the tech structure](https://uoe-my.sharepoint.com/:u:/g/personal/s2288848_ed_ac_uk/EU57hQVl5YZJkF4_O_10hhYBZ-aA8sCTyci47-eq_cBTtg?e=mjAUL1)
 ### 2. [how to ???( if you forget something, go here)](https://uoe-my.sharepoint.com/:p:/g/personal/s2288848_ed_ac_uk/Ea5GLPAfpABDjKEPfzqahdYB02IESq-dymhU91t9M0JPPA?e=s45Zfi)
+### 3. how to setup the github.
+https://uoe-my.sharepoint.com/:w:/g/personal/s2288848_ed_ac_uk/EV9Aw8K5PTxGrzeJSN46RiMB5BcIP79dw1NboR2NTpGdfg?e=s6iI7L
+
 
 ## Guide
 
@@ -56,4 +59,5 @@ https://uoe-my.sharepoint.com/:u:/g/personal/s2288848_ed_ac_uk/EU57hQVl5YZJkF4_O
 TODO get a desktop version png here.
   # Reference (click them!)
   1. [the school guide.](https://www.geos.ed.ac.uk/~bmg/teaching/rppp/week3/Capital%20Greenspaces%20Project.pdf)
-  2. 
+  2. [noise map](https://noise-planet.org/map_noisecapture/noisecapture_party.html#17/45.78513/4.79439/FPSLYO2019)
+  3. 

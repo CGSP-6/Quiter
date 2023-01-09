@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>leafletdemo</title>
+        <link href="https://cdn.bootcss.com/leaflet/1.3.4/leaflet.css"
+            rel="stylesheet">
+        <script src="https://cdn.bootcss.com/leaflet/1.3.4/leaflet.js"></script>
+    </head>
+    <body>
+        <h2>leaflet demo</h2>
+        <div id="map" style="width:100%;height: 600px;"></div>
+
+        <script>
+            // 创建地图实例
+            var map = L.map('map', {
+                center: [45.51, -122.2],
+                zoom: 6
+            });
+            // 添加图层到地图
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', { foo: 'bar' }).addTo(map);
+            // 绘制一条折线
+            var latlngs = [
+                    [45.51, -122.68],
+                    [44.877, -122.43],
+                    [44.04, -118.2]
+             ];
+              //根据提供的三点坐标绘制折线
+             var polyline = L.polyline(latlngs, { color: 'red' }).addTo(map);
+
+
+        </script>
+    </body>
+</html>

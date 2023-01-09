@@ -1,0 +1,152 @@
+/* || general setting */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: whitesmoke;
+}
+
+body {
+  width: 100%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* || layout */
+
+h1, h2, h3 {
+  font-family: 'Inconsolata', serif;
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || title layout */
+
+header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main, header, nav, article, aside, footer, section {
+  background-color: rgba(231, 242, 254, 0.5);
+  padding: 1%;
+}
+
+h1 {
+  flex: 5;
+  text-transform: uppercase;
+}
+
+header img {
+  display: block;
+  height: 60px;
+  padding-top: 20.15px;
+}
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  color: black;
+  padding:30px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* || main body layout */
+
+main {
+  display: flex;
+}
+
+article, section {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  padding: 1%;
+}
+
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+/* || results body layout */
+
+container {
+  padding: 0.01em 16px;
+  width: 100%;
+  outline-style: solid;
+  outline-color: cadetblue;
+}

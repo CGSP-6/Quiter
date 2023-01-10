@@ -7,11 +7,12 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: whitesmoke;
+  background-image: url("../../res/img/background.jpg");
+  background-attachment: fixed;
 }
 
 body {
-  width: 100%;
+  width: 95%;
   min-width: 800px;
   margin: 0 auto;
 }
@@ -31,7 +32,6 @@ p, input, li {
 h1 {
   font-size: 4rem;
   text-align: center;
-  text-shadow: 2px 2px 10px black;
 }
 
 h2 {
@@ -73,13 +73,13 @@ header img {
 }
 
 nav {
-  height: 50px;
+  height: 70px;
   flex: 100%;
   display: flex;
 }
 
 nav ul {
-  padding: 0;
+  padding: 10;
   list-style-type: none;
   flex: 2;
   display: flex;
@@ -99,6 +99,13 @@ nav a, nav span {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+.div-1 {
+  background-color: #EBEBEB;
+}
+.div-2 {
+  background-color: #ABBAEA;
 }
 
 button {
@@ -141,12 +148,44 @@ aside img {
 footer {
   margin-top: 20px;
 }
-
-/* || results body layout */
-
-container {
-  padding: 0.01em 16px;
-  width: 100%;
-  outline-style: solid;
-  outline-color: cadetblue;
+/* || Box for title */
+div.container {
+  border: 5px solid gray;
+  margin: 0;
 }
+
+/* || Dropdown option */
+.dropbtn {
+  background-color: #569cec;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 600px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #035ab6;}

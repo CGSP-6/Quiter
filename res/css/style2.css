@@ -24,7 +24,7 @@ h1, h2, h3 {
   color: #2a2a2a;
 }
 
-p, input, li {
+p, input, li, h4 {
   font-family: 'Noto Sans SC', sans-serif;
   color: #2a2a2a;
 }
@@ -41,6 +41,11 @@ h2 {
 
 h3 {
   font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 p, li {
@@ -145,9 +150,6 @@ aside img {
   max-width: 100%;
 }
 
-footer {
-  margin-top: 20px;
-}
 /* || Box for title */
 div.container {
   border: 5px solid gray;
@@ -172,7 +174,7 @@ div.container {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  width: 600px;
+  width: 800px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -189,3 +191,16 @@ div.container {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #035ab6;}
+
+/* || Footer */
+.copyright {
+  text-align: center;
+  
+}
+
+footer {
+  margin-top: 20px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}

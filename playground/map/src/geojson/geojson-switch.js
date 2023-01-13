@@ -1,10 +1,10 @@
 //generated form https://geojson.io/#map=14.05/55.94646/-3.19485 by shiqi
-var sample_json_point = {
+var sample_json_switch = {
     "type": "FeatureCollection",
     "features": [
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"isQuite": true},
         "geometry": {
           "coordinates": [
             -3.1883329048960434,

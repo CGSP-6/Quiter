@@ -1,5 +1,5 @@
 //generated form https://geojson.io/#map=14.05/55.94646/-3.19485 by shiqi
-var sample_json = {
+var myLines = {
     "type": "FeatureCollection",
     "features": [
       {

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Quieter app - map</title> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+SC:300" rel="stylesheet"> 
+    <link rel="stylesheet" href="../res/css/style2.css">
+  </head>
+
+  <body>
+    <header>
+      <h1 style= "text-align: center;"><b>RESULTS<b></h1>
+    </header>
+  
+    <header>
+      <nav>
+        <ul>
+          <li><div button class="div-1 button block"><a href="../home.html">HOME</a></div></li>
+          <li><div button class="div-2 button block"><a href="../page/about_noise.html">ABOUT</a></div></li>
+          <li><div button class="div-1 button block"><a href="../page/about_results.html">RESULTS</a></div></li>
+          <li><div button class="div-2 button block"><a href="../page/recording.html">RECORDING APPLICATION</a></div></li>
+          <li><div button class="div-1 button block"><a href="../page/about_us_2.html">CONTACT US</a></div></li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- STYLE USED IN THIS PAGE -->  
+  <!-- STYLE FOR TWO COLUMN IN RESULTS & SIMD SECTION--> 
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+        
+          .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+          }
+        
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+        </style>
+
+  <!-- STYLE FOR DROPDOWN OPTION IN SCENARIOS SECTION --> 
+  <!-- ANIMATION BY W3SCHOOL --> 
+        <style>
+          .dropbtn {
+            background-color: #569cec;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+          }
+
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            width: 800px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          .dropdown-content a:hover {background-color: #ddd;}
+
+          .dropdown:hover .dropdown-content {display: block;}
+
+          .dropdown:hover .dropbtn {background-color: #035ab6;}
+        </style>
+
+   <!-- STYLE FOR SLIDESHOW ANIMATION IN SIMD SECTION-->
+   <!-- ANIMATION BY W3SCHOOL --> 
+        <style>
+          * {box-sizing: border-box}
+          .body {font-family: Arial, sans-serif; margin:0}
+          .mySlides {display: none}
+          .img {vertical-align: middle;}
+          
+          /* Slideshow container */
+          .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+          }
+          
+          /* Next & previous buttons */
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          } 
+          /* Position the "next button" to the right */
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }        
+  
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+          }
+          
+          /* Caption text */
+          .text {
+            color: black;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+          
+          /* Number text */
+          .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+          
+          /* The dots/bullets/indicators */
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .active, .dot:hover {
+            background-color: #717171;
+          }
+          
+          /* Fading animation */
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+          }
+          </style>
+  
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script> 
+
+<!-- OUR FINDINGS SECTION -->
+    <main >
+        <article>
+          <h2><div class= "container">Our Findings</div></h2>
+              <div style= "text-align: justify;">
+              <p>Our findings showed that by using commute-based method, the level of noise pollution for walking routine can be measured. Other than that, this project proves that people can reduce the noise pollution exposure by include green spaces in their walking routine as the noise level in green spaces is much lower than the outside.</p>
+              <p>The results from this project demonstrates that if pedestrians choose the routes in green spaces to reach their destination, they will be less exposed to noise. Although, some of the paths which include green spaces takes longer time and route but the option will give different impact and play a remarkable role in reducing the exposure of noise pollution. This can reduce the negative health impact such as hypertension and stress.</p>
+              </div>
+
+<!-- RESULTS SECTION-->
+<!-- In this section, there are 2 separate columns which are the left (50%) is map of Meadows Park and the right (50%) is map of Princes Street Garden. -->
+          <h2><div class= "container">The Results</div></h2> 
+            <div class="row">
+              <div class="column" style="background-color:rgba(231, 242, 254, 0.5);">
+                <div style= "text-align: center;">
+                <h3>Noise Level in Meadows Park</h3>
+                <p><a href="../res/img/result1.jpeg"><img src="../res/img/result1.jpeg" alt='the text will show here when you can not load the' style="width:500px;height:400px"></a></p>
+                </div>
+              </div>
+              <div class="column" style="background-color:rgba(231, 242, 254, 0.5);">
+                <div style= "text-align: center;">
+                <h3>Noise Level in Princes Street Garden</h3>
+                <p><a href="../res/img/result2.png"><img src="../res/img/result2.png" alt='the text will show here when you can not load the' style="width:500px;height:400px"></a></p>
+                </div>
+              </div>
+            </div>
+         
+   <!-- SCENARIOS SECTION -->
+   <!-- In this section, dropdown animation have been used to list of the scenarios options.-->
+        <h2><div class= "container">The Walking Scenarios in Edinburgh</div></h2>
+            <div style= "text-align: justify;">
+            <p>There are four scenarios of walking routine by using the routes inside of four different greenspaces that had been created in this project which are Meadows Park, Princes Street Garden, Bruntsfield Link Park and Braidburn Valley Park. The route in the parks were proved to have a low noise level because the route are far from the traffic congestion.</p>
+            <p>Let's change our lifestyle by using more greenspaces and check our suggestion walking route below:</p>
+              <div class="dropdown">
+                <button class="dropbtn">The Walking Scenarios Using Parks</button>
+                <div class="dropdown-content">
+                  <a href="../res/img/scenario1.png"><p>Scenario 1: A student walking from his house to the bus stop by using the route in Bruntsfield Park.</p></a>
+                  <a href="../res/img/scenario2.png"><p>Scenario 2: A student walking from her house to the bus stop by using the route in Braidburn Valley Park.</p></a>
+                  <a href="../res/img/scenario3.png"><p>Scenario 3: A student walking from shop to the Scottish National Gallery by using the route in Princes Street Garden.</p></a>
+                  <a href="../res/img/scenario4.png"><p>Scenario 4: A student walking from his accommodation to school by using the route in Meadows Park.</p></a>
+                </div>
+              </div>
+            </div>
+
+<!-- SIMD SECTION -->
+ <!-- In this section, there are 2 separate columns which are the left (50%) is the explanation about SIMD and the right (50%) is the slideshow animation of the maps that mentioned in the explanation. -->
+          <h2><div class= "container">Link Greenspaces Accessibility with the SIMD</div></h2>
+            <div style= "text-align: justify;"><p>SIMD is stand for Scottish Index of Multiple Deprivation. This index measure the deprivation in Scotland area in term of resources and income. Deprived income area illustrate that the people in that area has low income (Scottish Government, 2020). More information can be access here <a href="https://www.gov.scot/collections/scottish-index-of-multiple-deprivation-2020/" target="_blank">here</a> in the website of Scottish Government.</p></div>
+              <div class="row">
+              <div class="column" style="background-color:rgba(231, 242, 254, 0.5)">
+                <div style= "text-align: justify;">
+                <p>The quiet green space area of each data zone were measured and categorised. The quiet green space area of Edinburgh is below. The value 1 represents maximum 10% of the green space in that area while value 10 represents less than 10% of the green space in the area (Map 1). People who lives in the areas that have green spaces at the same time income deprived and choose walking for commute, we provide suggestions walking route for their travel. We encourage people to use the green spaces to escape from noise pollution. The areas with black line border are low income with 10% green spaces accessibility (Map 2).This is one of the suggestion for the park, the purple route is the route that is quieter and easier to pass in the generated recommended green space (Map 3).
+                    As the analysis was performed on all roads and green spaces in Edinburgh, paths were also generated in other green spaces, some of which substantially overlapped existing paths, demonstrating the generality and practicality of our design. These are the examples of walking route using Meadows Park (Map 4).</p>
+                </div>
+              </div>
+
+              <div class="column" style="background-color:rgba(231, 242, 254, 0.5)">      
+                  <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="../res/img/simd1.png" style="width:100%">
+                      <div class="text">Map 1: The Accessibility of Green Spaces</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="../res/img/simd2.png" style="width:100%">
+                      <div class="text">Map 2: Green Space Accessibility with income Deprivation zones (10%)</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="../res/img/simd3.png" style="width:100%">
+                      <div class="text">Map 3: Proposals for Parallel Paths in Random Public Green Space</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="../res/img/simd4.png" style="width:100%">
+                      <div class="text">Map 4: Proposals for Parallel Paths in the Meadows Park</div>
+                    </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+                  <br>  
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+                  </div>
+              </div> 
+              </div>   
+              </main>
+            </article>
+
+    <footer>
+      <iframe name="footer" marginwidth=0 marginheight=0 width=100% height=90 src="../res/html/footer.html" frameborder=0></iframe>
+    </footer>
+    
+  </body>
+</html>

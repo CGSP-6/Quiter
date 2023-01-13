@@ -6,33 +6,32 @@ html, body {
 }
 
 html {
-  /* base font-size of the website */
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-image: url("../../res/img/background.jpg");
+  background-attachment: fixed;
 }
 
 body {
-  width: 70%;
+  width: 95%;
   min-width: 800px;
   margin: 0 auto;
 }
 
-/* || layout 字体*/
+/* || layout */
 
 h1, h2, h3 {
-  font-family: 'Long Cang', cursive;
+  font-family: 'Inconsolata', serif;
   color: #2a2a2a;
 }
 
-p, input, li {
+p, input, li, h4 {
   font-family: 'Noto Sans SC', sans-serif;
   color: #2a2a2a;
 }
-/* The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents. */
+
 h1 {
   font-size: 4rem;
   text-align: center;
-  text-shadow: 2px 2px 10px black;
 }
 
 h2 {
@@ -42,6 +41,11 @@ h2 {
 
 h3 {
   font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 p, li {
@@ -58,7 +62,7 @@ header {
 }
 
 main, header, nav, article, aside, footer, section {
-  background-color: rgba(29, 149, 63, 0.5);
+  background-color: rgba(231, 242, 254, 0.5);
   padding: 1%;
 }
 
@@ -74,13 +78,13 @@ header img {
 }
 
 nav {
-  height: 50px;
+  height: 70px;
   flex: 100%;
   display: flex;
 }
 
 nav ul {
-  padding: 0;
+  padding: 10;
   list-style-type: none;
   flex: 2;
   display: flex;
@@ -100,6 +104,24 @@ nav a, nav span {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+}
+
+.div-1 {
+  background-color: #EBEBEB;
+}
+.div-2 {
+  background-color: #ABBAEA;
+}
+
+button {
+  border: none;
+  color: black;
+  padding:30px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* || main body layout */
@@ -128,6 +150,21 @@ aside img {
   max-width: 100%;
 }
 
+/* || Box for title */
+div.container {
+  border: 5px solid gray;
+  margin: 0;
+}
+
+/* || Footer */
+.copyright {
+  text-align: center;
+  
+}
+
 footer {
   margin-top: 20px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
 }

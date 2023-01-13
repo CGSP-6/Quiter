@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="conatiner-fluid">
+            <form id="upload" method="post" enctype="multipart/form-data">
+                <div class="form-group form-inline">
+                    <input class="form-control" id="file" name="files" type="file" accept=".json">
+                    <button class="btn btn-primary">Upload</button>
+
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Coordinate</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Add Coordinate</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <br />
+                                        <form name="" action="" method="POST">
+                                            <input type="button" value="Add Row" onclick="addRow('dataTable')"
+                                                class="btn btn-success btn-sm" />
+                                            <input type="button" value="Delete Row" onclick="deleteRow('dataTable')"
+                                                class="btn btn-danger btn-sm" />
+                                            <br /><br />
+                                            <table>
+                                                <tr>
+                                                    <th># &nbsp; </th>
+                                                    <th>Latitude </th>
+                                                    <th>Longitude</th>
+                                                </tr>
+                                                <tbody id="dataTable" width="350px" border="1">
+                                                    <tr>
+                                                        <td><input type="checkbox" name="chk[]" id="chk_1" /></td>
+                                                        <td><input type="number" name="lat[]" id="lat_1"
+                                                                placeholder="Latitude" class="form-control lat_1" />
+                                                        </td>
+                                                        <td><input type="number" name="lng[]" id="lng_1"
+                                                                placeholder="Longitude" class="form-control lng_1" />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <input type="hidden" name="count" id="count" value="1">
+                                                <tr>
+                                                    <td colspan="5">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal"
+                                        onclick="getInputValue();">Visualise</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="map"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+<script src="src/index.js"></script>
+<script src="src/geojson.js"></script>
+<script src="src/file-upload.js"></script>
+<script src="src/multi-marker.js"></script>
+
+</html>

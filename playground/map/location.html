@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 添加Leaflet的CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+    
+    <!-- 添加Leaflet的JS要确保它在 CSS的后面 -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+    <!-- 添加L.Control.Locate的CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.css" />
+</head>
+<body>
+    <div id="mapid"></div>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@latest/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    <script>
+        //设置地图加载的初始大小
+        var mymap = L.map('mapid').setView([51.505, -0.09], 3);
+        
+        //如果地图加载的初始位置就想在用户所在位置的话就设置下面这个方法
+        //var mymap = L.map('mapid');
+        // mymap.locate({
+        //     setView : true
+        // });
+        
+        //为地图加下标信息
+        var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        var osmAttrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+        
+        L.tileLayer(osmUrl,
+            {foo: 'bar', attribution: osmAttrib}).addTo(mymap);
+            
+        L.control.layers(overlays).addTo(mymap);
+            
+        
+        //添加定位的control
+        mymap.addControl(L.control.locate({
+            locateOptions: {
+                enableHighAccuracy: true //说是精准定位，但其实我觉得没差
+            },
+            strings: {
+                title: "Show me where I am, yo!"
+            }
+        }));
+    </script>
+
+    
+</body>
+</html>

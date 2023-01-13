@@ -1,0 +1,36 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.container-fluid {
+    margin-top: 5px !important;
+}
+
+#file {
+    width: 50%;
+    color: white;
+    border: 0 !important;
+    background-color: #222;
+}
+
+#file {
+    color: white;
+    background-color: #222;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

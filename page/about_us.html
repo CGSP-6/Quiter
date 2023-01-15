@@ -1,50 +1,168 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- charset is always utf-8 -->
     <meta charset="utf-8">
-    <title>The Quiter app - the group</title> 
-    <!-- this is the font api -->
-    <link href="https://fonts.googleapis.com/css?family=Long+Cang|Noto+Sans+SC:300" rel="stylesheet">
-    <!-- TODO make it a cdn -->
-    <link rel="stylesheet" href="./../res/css/style.css">
+    <title>The Quieter app - map</title> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+SC:300" rel="stylesheet"> 
+    <link rel="stylesheet" href="../res/css/style.css">
   </head>
 
   <body>
     <header>
-      <h1>About Us</h1>
-      <img src="./../res/img/dove.png" alt="a picture of dove">
+      <h1 style= "text-align: center;"><b>Contact Us<b></h1>
+    </header>
+
+    <header>
       <nav>
         <ul>
-          <li><a href="./../index.html">Start</a></li>
-          <li><a href="./about_noise.html">About Noise</a></li>
-          <li><a href="./about_tech.html">technial details</a></li>
-          <li><a href="./about_us.html">About our group</a></li>
+          <li><div button class="div-1 button block"><a href="../index.html">HOME</a></div></li>
+          <li><div button class="div-2 button block"><a href="../page/about_noise.html">ABOUT</a></div></li>
+          <li><div button class="div-1 button block"><a href="../page/about_results.html">RESULTS</a></div></li>
+          <li><div button class="div-2 button block"><a href="../page/recording.html">RECORDING APPLICATION</a></div></li>
+          <li><div button class="div-1 button block"><a href="../page/about_us.html">CONTACT US</a></div></li>
         </ul>
       </nav>
     </header>
+  <!-- STYLE USE IN CONTACT US SECTION -->
+<style>
+  img {
+  border-radius: 50%;
+} 
 
-    <main>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-      <article>
-        <h2>welcome</h2>
-        <p>this site is still under construction.</p>
-        <p>come on and join us!</p>
-      </article>
+html {
+  box-sizing: border-box;
+}
 
-      <aside>
-        <h2>pics</h2>
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-        <a href="./../res/img/favorite-1.jpg"><img src="./../res/img/favorite-1_th.jpg" alt="the text will show here when you can not load the pic"></a>
-        <a href="./../res/img/favorite-2.jpg"><img src="./../res/img/favorite-2_th.jpg" alt="the text will show here when you can not load the pic"></a>
-        <a href="./../res/img/favorite-3.jpg"><img src="./../res/img/favorite-3_th.jpg" alt="the text will show here when you can not load the pic"></a>
-        <a href="./../res/img/favorite-4.jpg"><img src="./../res/img/favorite-4_th.jpg" alt="the text will show here when you can not load the pic"></a>
-      </aside>
-    </main>
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
-    <footer>
-      <iframe name="footer" marginwidth=0 marginheight=0 width=100% height=100 src="./../res/html/footer.html" frameborder=0></iframe>
-    </footer>
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button-1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-1:hover {
+  background-color: #555;
+}
+</style>
+
+<!-- CONTACT US SECTION -->
+<!-- In this scetion, contain the details of groupmates such as name and link to their email. -->
+<h2><div class= "container">Meet The Team</div></h2>
+<br>
+
+  <div class="row">
+   <div class="column">
+     <div class="card">
+      <img src="../res/img/Nabilah.jpg" alt="Nabilah" style="width:300" height="300" class="center">
+      <div class="container">
+        <h2>Nurul Nabilah Mahmud</h2>
+        <p><a href="mailto: ilamahmud98@yahoo.com" style="color: black; text-decoration-line: none;">ilamahmud98@yahoo.com</a></p>
+      </div>
+    </div>
+  </div>
+      
+  <div class="column">
+    <div class="card">
+      <img src="../res/img/Ali.jpg" alt="Ali" style="width:300" height="300">
+      <div class="container">
+        <h2>Mehmet Ali Temur</h2>
+        <p><a href="mailto: ilamahmud98@yahoo.com" style="color: black; text-decoration-line: none;">temurmehmetali@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+        
+   <div class="column">
+     <div class="card">
+       <img src="../res/img/Shiqi.jpg" alt="Shiqi" style="width:300" height="300">
+       <div class="container">
+        <h2>Shiqi Wang</h2>
+        <p><a href="mailto: ilamahmud98@yahoo.com" style="color: black; text-decoration-line: none;">S.Wang-209@sms.ed.ac.uk</a></p>
+       </div>
+    </div>
+  </div>
+  
+        
+  <div class="column">
+    <div class="card">
+      <img src="../res/img/Pelinsu.jpg" alt="Pelinsu" style="width:300" height="300">
+      <div class="container">
+        <h2>Pelinsu Demirci</h2>
+        <p><a href="mailto: ilamahmud98@yahoo.com" style="color: black; text-decoration-line: none;">pelinsu_demirci@hotmail.com</a></p>
+      </div>
+    </div>
+  </div>
+        
+  <div class="column">
+    <div class="card">
+      <img src="../res/img/Namrata.jpg" alt="Namrata" style="width:300" height="300">
+      <div class="container">
+        <h2>Namrata Mujumdar</h2>
+        <p><a href="mailto: ilamahmud98@yahoo.com" style="color: black; text-decoration-line: none;">nmujumdar007@gmail.com</a></p>
+       </div>
+    </div>
+  </div>
+         
+  <div class="column">
+    <div class="card">
+      <img src="../res/img/Gao.jpeg" alt="Yu" style="width:300" height="300">
+      <div class="container">
+        <h2>Yu Gao</h2>
+        <p><a href="mailto: ilamahmud98@yahoo.com" style="color: black; text-decoration-line: none;">y.gao-113@sms.ed.ac.uk</a></p>
+      </div>
+    </div>
+  </div>
+        
+  <footer>
+    <iframe name="footer" marginwidth=0 marginheight=0 width=100% height=90 src="../res/html/footer.html" frameborder=0></iframe>
+  </footer>
+
 
   </body>
 </html>

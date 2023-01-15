@@ -2,43 +2,100 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Quiter app - map</title> 
-    <link href="https://fonts.googleapis.com/css?family=Long+Cang|Noto+Sans+SC:300" rel="stylesheet"> 
+    <title>The Quieter app - map</title> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+SC:300" rel="stylesheet"> 
     <link rel="stylesheet" href="./res/css/style.css">
   </head>
 
   <body>
     <header>
-      <h1>CGSP-Start</h1>
-      <img src="./res/img/dove.png" alt="a picture of dove">
+      <h1 style= "text-align: center;"><b>NOISE POLLUTION<b></h1>
+    </header>
+  
+    <header>
       <nav>
         <ul>
-          <li><a href="./index.html">Start</a></li>
-          <li><a href="./page/about_noise.html">About Noise</a></li>
-          <li><a href="./page/about_tech.html">technial details</a></li>
-          <li><a href="./page/about_us.html">About our group</a></li>
-          <li><a href="./page/test.html">the page under test</a></li>
+          <li><div button class="div-1 button block"><a href="./home.html">HOME</a></div></li>
+          <li><div button class="div-2 button block"><a href="./page/about_noise.html">PROJECT SUMMARY</a></div></li>
+          <li><div button class="div-1 button block"><a href="./page/about_results.html">FINDINGS</a></div></li>
+          <li><div button class="div-2 button block"><a href="./page/recording.html">RECORDING APPLICATION</a></div></li>
+          <li><div button class="div-1 button block"><a href="./page/about_us_2.html">CONTACT US</a></div></li>
         </ul>
       </nav>
     </header>
 
+<!-- HOME CONTAINER -->
     <main>
-
       <article>
-        <h2>welcome</h2>
-        <p>this site is still under construction.</p>
-        <p>come on and join us!</p>
-      </article>
-      <div>something</div>
-<!-- TODO add some map here , may be using the div or some thing -->
-      <aside>
-        <h2>pics</h2>
+  <!-- STYLE FOR ANIMATION-->
+  <!-- ANIMATION BY W3SCHOOL -->
+        <style>
+          .container-1 {
+            position: relative;
+            width: 100%;
+            height: 50%;
+          }
 
-        <a href="./res/img/favorite-1.jpg"><img src="./res/img/favorite-1_th.jpg" alt="the text will show here when you can not load the pic"></a>
-        <a href="./res/img/favorite-2.jpg"><img src="./res/img/favorite-2_th.jpg" alt="the text will show here when you can not load the pic"></a>
-        <a href="./res/img/favorite-3.jpg"><img src="./res/img/favorite-3_th.jpg" alt="the text will show here when you can not load the pic"></a>
-        <a href="./res/img/favorite-4.jpg"><img src="./res/img/favorite-4_th.jpg" alt="the text will show here when you can not load the pic"></a>
-      </aside>
+          .image {
+            display: block;
+            width: 100%;
+            height: 110%;
+          }
+
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 110%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #394251ad;
+          }
+
+          .container-1:hover .overlay {
+            opacity: 1;
+          }
+
+          .text {
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          .text-1 {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          </style>
+
+            <div class="container-1">
+              <img src="./res/img/home.jpeg" alt="Home" class="image">
+              <div class="overlay">
+                 
+                <h1><div class="text">Welcome</div></h1>
+                <h2><div class="text-1">Let's Protect Your Ear</h2></div>           
+              </div>
+            </div>
+           <br><br><br><br><br>
+            <h2>The Role of Green Spaces in Reducing Noise Pollution</h2>
+            <p style="text-align:center">This project studies the relationship between green spaces and noise, as well as the relationship between people and green spaces, which concluded that people can use green spaces to reduce noise exposure level while walking through them.<br> From the study of Edinburgh's green spaces and the distribution of internal roads, we produced suggestions for the transformation of Edinburgh's green space. <br>At the same time, it is associated with SIMD (Scottish Multiple Deprivation Index) and select data zones that have more economic deprivation but have green spaces around them and we put forward targeted suggestions.</p>
+         
+          </article>     
     </main>
 
     <footer>

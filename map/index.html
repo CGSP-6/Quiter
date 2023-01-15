@@ -266,15 +266,16 @@
 <!-- RESULTS SECTION-->
 <!-- In this section, there are 2 separate columns which are the left (50%) is map of Meadows Park and the right (50%) is map of Princes Street Garden. -->
           <h2><div class= "container">How we developed these maps</div></h2> 
-          <div style= "text-align: center;">
+          <div style= "text-align: center; width: 50%;">
             <h3>Project Architecture</h3>
-            <p>Our 4 developers collaborate to develop programs through github, and use weekly meetings through zoom. The framework of the webpage was drafted by Shiqi, and Nabilah, Namrata, and Pelinsu modified the webpage. The map was developed by Shiqi.</p>
             <p><a href="../res/img/tech.png"><img src="../res/img/tech.png" alt='the text will show here when you can not load the' style="width:800px;height:500px"></a></p>
-            <p style:"text-align: left;">Our program is divided into three parts: front end: web page, back end: Python, database: Oracle. </p>
-      
-            <p style:"text-align: left;">The first part, HTML, Javascript, CSS and related resource files constitute the basic framework of the web page. In the second part, write a python program in the cgi-bin folder, use folium to generate a map, and use cx_Oracle to link to the Oracle database. In the third part, use Oracle to write a data table named CGSP_Point, the fields are ID, TYPE, LON_X, LAT_Y, where ID is the primary key. And by creating a sequence, the automatic growth of the primary key ID is realized.</p>
           </div>
-        </article>
+          <div style="text-align: left;">
+            <p>Our 4 developers collaborate to develop programs through github, and use weekly meetings through zoom. The framework of the webpage was drafted by Shiqi, and Nabilah, Namrata, and Pelinsu modified the webpage. The map was developed by Shiqi.</p>
+            <p>Our program is divided into three parts: front end: web page, back end: Python, Database: Oracle. </p>
+            <p>The first part, HTML, Javascript, CSS and related resource files constitute the basic framework of the web page. In the second part, write a python program in the cgi-bin folder, use folium to generate a map, and use cx_Oracle to link to the Oracle database. In the third part, use Oracle to write a data table named CGSP_Point, the fields are ID, TYPE, LON_X, LAT_Y, where ID is the primary key. And by creating a sequence, the automatic growth of the primary key ID is realized.</p>
+          </div>
+          </article>
     </main>
 
     <footer>

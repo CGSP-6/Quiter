@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQS8SY94T3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LQS8SY94T3');
+    </script>
     <meta charset="utf-8">
     <title>The Quieter - Web Map</title> 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+SC:300" rel="stylesheet"> 
@@ -243,7 +252,7 @@
         <article>
           <h2><div class= "container">The Maps</div></h2>
           <div class="dropdown">
-            <button class="dropbtn">Options</button>
+            <button class="dropbtn">Options for noise level</button>
             <div class="dropdown-content">
               <a id="bt_change_map_1">All Places 1</a>
               <a id="bt_change_map_2">Only Quieter Places</a>
@@ -261,7 +270,9 @@
             <h3>Project Architecture</h3>
             <p>Our 4 developers collaborate to develop programs through github, and use weekly meetings through zoom. The framework of the webpage was drafted by Shiqi, and Nabilah, Namrata, and Pelinsu modified the webpage. The map was developed by Shiqi.</p>
             <p><a href="../res/img/result1.jpeg"><img src="../res/img/result1.jpeg" alt='the text will show here when you can not load the' style="width:500px;height:400px"></a></p>
-            <p style:"text-align: left;">Our program is divided into three parts: front end: web page, back end: Python, database: Oracle. The first part, HTML, Javascript, CSS and related resource files constitute the basic framework of the web page. In the second part, write a python program in the cgi-bin folder, use folium to generate a map, and use cx_Oracle to link to the Oracle database. In the third part, use Oracle to write a data table named CGSP_Point, the fields are ID, TYPE, LON_X, LAT_Y, where ID is the primary key. And by creating a sequence, the automatic growth of the primary key ID is realized.</p>
+            <p style:"text-align: left;">Our program is divided into three parts: front end: web page, back end: Python, database: Oracle. </p>
+      
+            <p style:"text-align: left;">The first part, HTML, Javascript, CSS and related resource files constitute the basic framework of the web page. In the second part, write a python program in the cgi-bin folder, use folium to generate a map, and use cx_Oracle to link to the Oracle database. In the third part, use Oracle to write a data table named CGSP_Point, the fields are ID, TYPE, LON_X, LAT_Y, where ID is the primary key. And by creating a sequence, the automatic growth of the primary key ID is realized.</p>
           </div>
         </article>
     </main>

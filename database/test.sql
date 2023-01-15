@@ -1,1 +1,0 @@
-SELECT *  FROM data.point where lat = 56;

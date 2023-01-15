@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="http://www.pipipi.net/" />
+<title>change</title>
+<script type="text/javascript">
+function changeUrl(Url){
+  document.getElementById("mapFrame").src=Url;
+}
+window.onload=function(){
+  var obt=document.getElementById("bt_change_map");
+  obt.onclick=function(){
+    changeUrl("https://www.geos.ed.ac.uk/~s2288848/cgi-bin/cgsp-quiter/quiter.py");
+  }
+}
+</script>
+</head>
+<body>
+<iframe id="mapFrame" src=""></iframe>
+<input type="button" id="bt_change_map" value="查看效果"/>
+</body>
+</html>

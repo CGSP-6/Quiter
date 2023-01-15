@@ -1,184 +1,106 @@
-/* || general setting */
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Quieter app - map</title> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans+SC:300" rel="stylesheet"> 
+    <link rel="stylesheet" href="./res/css/style.css">
+  </head>
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
+  <body>
+    <header>
+      <h1 style= "text-align: center;"><b>NOISE POLLUTION<b></h1>
+    </header>
+  
+    <header>
+      <nav>
+        <ul>
+          <li><div button class="div-1 button block"><a href="./home.html">HOME</a></div></li>
+          <li><div button class="div-2 button block"><a href="./page/about_noise.html">PROJECT SUMMARY</a></div></li>
+          <li><div button class="div-1 button block"><a href="./page/about_results.html">FINDINGS</a></div></li>
+          <li><div button class="div-2 button block"><a href="./page/recording.html">RECORDING APPLICATION</a></div></li>
+          <li><div button class="div-1 button block"><a href="./page/about_us_2.html">CONTACT US</a></div></li>
+        </ul>
+      </nav>
+    </header>
 
-html {
-  font-size: 10px;
-  background-image: url("../../res/img/background.jpg");
-  background-attachment: fixed;
-}
+<!-- HOME CONTAINER -->
+    <main>
+      <article>
+  <!-- STYLE FOR ANIMATION-->
+  <!-- ANIMATION BY W3SCHOOL -->
+        <style>
+          .container-1 {
+            position: relative;
+            width: 100%;
+            height: 50%;
+          }
 
-body {
-  width: 95%;
-  min-width: 800px;
-  margin: 0 auto;
-}
+          .image {
+            display: block;
+            width: 100%;
+            height: 110%;
+          }
 
-/* || layout */
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 110%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #394251ad;
+          }
 
-h1, h2, h3 {
-  font-family: 'Inconsolata', serif;
-  color: #2a2a2a;
-}
+          .container-1:hover .overlay {
+            opacity: 1;
+          }
 
-p, input, li, h4 {
-  font-family: 'Noto Sans SC', sans-serif;
-  color: #2a2a2a;
-}
+          .text {
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          .text-1 {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          </style>
 
-h1 {
-  font-size: 4rem;
-  text-align: center;
-}
+            <div class="container-1">
+              <img src="./res/img/home.jpeg" alt="Home" class="image">
+              <div class="overlay">
+                 
+                <h1><div class="text">Welcome</div></h1>
+                <h2><div class="text-1">Let's Protect Your Ear</h2></div>           
+              </div>
+            </div>
+           <br><br><br><br><br>
+            <h2>The Role of Green Spaces in Reducing Noise Pollution</h2>
+            <p style="text-align:center">This project studies the relationship between green spaces and noise, as well as the relationship between people and green spaces, which concluded that people can use green spaces to reduce noise exposure level while walking through them.<br> From the study of Edinburgh's green spaces and the distribution of internal roads, we produced suggestions for the transformation of Edinburgh's green space. <br>At the same time, it is associated with SIMD (Scottish Multiple Deprivation Index) and select data zones that have more economic deprivation but have green spaces around them and we put forward targeted suggestions.</p>
+         
+          </article>     
+    </main>
 
-h2 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-h3 {
-  font-size: 2.2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-p, li {
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-/* || title layout */
-
-header {
-  margin-bottom: 10px;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-main, header, nav, article, aside, footer, section {
-  background-color: rgba(231, 242, 254, 0.5);
-  padding: 1%;
-}
-
-h1 {
-  flex: 5;
-  text-transform: uppercase;
-}
-
-header img {
-  display: block;
-  height: 60px;
-  padding-top: 20.15px;
-}
-
-nav {
-  height: 70px;
-  flex: 100%;
-  display: flex;
-}
-
-nav ul {
-  padding: 10;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
-}
-
-nav li {
-  display: inline;
-  text-align: center;
-  flex: 1;
-}
-
-nav a, nav span {
-  display: inline-block;
-  font-size: 2rem;
-  height: 3rem;
-  line-height: 1.7;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-}
-
-.div-1 {
-  background-color: #EBEBEB;
-}
-.div-2 {
-  background-color: #ABBAEA;
-}
-
-button {
-  border: none;
-  color: black;
-  padding:30px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* || main body layout */
-
-main {
-  display: flex;
-}
-
-article, section {
-  flex: 4;
-}
-
-aside {
-  flex: 1;
-  margin-left: 10px;
-  padding: 1%;
-}
-
-aside a {
-  display: block;
-  float: left;
-  width: 50%;
-}
-
-aside img {
-  max-width: 100%;
-}
-
-/* || Box for title */
-div.container {
-  border: 5px solid gray;
-  margin: 0;
-}
-
-/* || Two columns section */
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* || Footer */
-.copyright {
-  text-align: center;
-}
-
-footer {
-  margin-top: 20px;
-}
+    <footer>
+            <iframe name="footer" marginwidth=0 marginheight=0 width=100% height=100 src="./res/html/footer.html" frameborder=0></iframe>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,1 @@
+# Files under this folder are copied from cgi-bin and they cannot execute under this path.

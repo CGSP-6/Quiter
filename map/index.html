@@ -63,6 +63,7 @@
         var obt_1=document.getElementById("bt_change_map_1");
         var obt_2=document.getElementById("bt_change_map_2");
         var obt_3=document.getElementById("bt_change_map_3");
+        var obt_4=document.getElementById("bt_change_map_4");
         obt_1.onclick=function(){
           changeUrl("https://www.geos.ed.ac.uk/~s2288848/cgi-bin/cgsp-quiter/quiter.py");
         }
@@ -71,6 +72,9 @@
         }
         obt_3.onclick=function(){
           changeUrl("https://www.geos.ed.ac.uk/~s2288848/cgi-bin/cgsp-quiter/quiter-noisy.py");
+        }
+        obt_4.onclick=function(){
+          changeUrl("https://www.geos.ed.ac.uk/~s2288848/cgi-bin/cgsp-quiter/quiter-line.py");
         }
       }
       </script>
@@ -260,6 +264,7 @@
               <a id="bt_change_map_2">Only Quieter Places</a>
               <!-- <input type="button" id="bt_change_map" value="查看效果"/> -->
               <a id="bt_change_map_3">Only Noisy Places</a>
+              <a id="bt_change_map_4">Suggested quieter route(in green)</a>
             </div>
           </div>
           <div style="text-align: center;">

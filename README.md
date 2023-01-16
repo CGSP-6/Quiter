@@ -57,10 +57,9 @@ look this
   - database(just store some information about the database, we need a real database for it)
 ### More detailed 
 https://uoe-my.sharepoint.com/:u:/g/personal/s2288848_ed_ac_uk/EU57hQVl5YZJkF4_O_10hhYBZ-aA8sCTyci47-eq_cBTtg?e=XB3970 
-## Preview
+## Preview(may be)
 ![the png](./res/img/2023-01-01-mobile.png)
 TODO get a desktop version png here.
-  # Reference (click them!)
+# Reference for develop(click them!)
   1. [the school guide.](https://www.geos.ed.ac.uk/~bmg/teaching/rppp/week3/Capital%20Greenspaces%20Project.pdf)
   2. [noise map](https://noise-planet.org/map_noisecapture/noisecapture_party.html#17/45.78513/4.79439/FPSLYO2019)
-  3. 

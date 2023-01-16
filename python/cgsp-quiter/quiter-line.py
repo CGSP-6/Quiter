@@ -31,10 +31,14 @@ def foliumMap():
         else:
             folium.Marker(row[1:],icon=folium.Icon(color='red'),popup='here is noisy').add_to(map_l)
     conn.close()
-    
+    def style_function(feature):
+        return {'color':'#2E8B57',
+        'weight':6
+           }
 
     folium.GeoJson(
         '../../cgsp/Quiter/map/src/geojson/line.json',
+        style_function=style_function,
         name='geojson'
     ).add_to(map_l)
     return map_l.get_root().render()
